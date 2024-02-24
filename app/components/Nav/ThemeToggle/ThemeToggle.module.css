@@ -1,0 +1,41 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.input {
+  position: relative;
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: #585b61;
+  border-radius: 50px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.input::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 50%;
+  background: #dfcdc3;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  scale: 1.1;
+}
+
+.input:checked::after {
+  left: 0;
+}
+
+.icon {
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,84 @@
+.footer {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-shrink: 1;
+  width: 75%;
+  justify-content: space-between;
+  padding: 15px 0px;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 475px) {
+    gap: 10px;
+    flex-direction: column;
+    text-align: start;
+  }
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #dfcdc3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+.hr {
+  width: 75%;
+  height: 1px;
+  background-color: #dfcdc3;
+  border: none;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
+}
+
+.j {
+  @media (max-width: 475px) {
+    font-size: 16px;
+  }
+}
+
+.linkedIn {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.linkedIn:hover {
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.5);
+}
+
+.gitHub {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.gitHub:hover {
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.5);
+} 
